@@ -1,12 +1,12 @@
-package com.example.localstorage.adapter
+package com.example.notesapp.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.localstorage.Data
-import com.example.localstorage.databinding.RowTodosBinding
+import com.example.notesapp.Data
+import com.example.notesapp.databinding.RowTodosBinding
 
 class Adapter(
     var listener: OnItemClickListener

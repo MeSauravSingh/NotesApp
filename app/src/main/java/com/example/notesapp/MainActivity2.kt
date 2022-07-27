@@ -1,11 +1,11 @@
-package com.example.localstorage
+package com.example.notesapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.localstorage.adapter.Adapter
-import com.example.localstorage.databinding.ActivityMain2Binding
+import com.example.notesapp.adapter.Adapter
+import com.example.notesapp.databinding.ActivityMain2Binding
 
 
 class MainActivity2 : AppCompatActivity(),Adapter.OnItemClickListener {

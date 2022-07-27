@@ -1,4 +1,4 @@
-package com.example.localstorage
+package com.example.notesapp
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
