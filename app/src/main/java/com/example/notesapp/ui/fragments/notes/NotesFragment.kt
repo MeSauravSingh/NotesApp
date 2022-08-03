@@ -54,7 +54,7 @@ class NotesFragment : Fragment(R.layout.fragment_notes), Adapter.OnItemClickList
             }
 
             btnFab.setOnClickListener {
-                findNavController().navigate(NotesFragmentDirections.actionFirstFragmentToAddFragment())
+                findNavController().navigate(NotesFragmentDirections.actionNotesFragmentToAddFragment())
             }
 
             ItemTouchHelper(object : ItemTouchHelper.SimpleCallback(
@@ -117,7 +117,7 @@ class NotesFragment : Fragment(R.layout.fragment_notes), Adapter.OnItemClickList
 
     override fun onItemClickListener(myData: Data, position: Int) {
         findNavController().navigate(
-            NotesFragmentDirections.actionFirstFragmentToEditFragment(myData)
+            NotesFragmentDirections.actionNotesFragmentToEditFragment(myData)
         )
     }
 
