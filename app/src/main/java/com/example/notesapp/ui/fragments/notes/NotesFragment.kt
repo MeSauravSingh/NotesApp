@@ -135,7 +135,7 @@ class NotesFragment : Fragment(R.layout.fragment_notes), Adapter.OnItemClickList
 
     private fun searchDatabase(query: String?){
         if (query != null ) {
-            viewModel.searchQuery(query).observe(viewLifecycleOwner) { list ->
+            viewModel.searchQuery(query).observeOnce(viewLifecycleOwner) { list ->
                 list?.let {
                     myAdapter.submitList(it)
                 }
