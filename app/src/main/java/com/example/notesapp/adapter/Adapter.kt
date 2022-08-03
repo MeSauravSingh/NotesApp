@@ -9,8 +9,8 @@ import com.example.notesapp.Data
 import com.example.notesapp.databinding.RowTodosBinding
 
 class Adapter(
-    var listener: OnItemClickListener
-) : ListAdapter<Data, Adapter.ViewHolder>(DiffCallBack()) {
+    private val listener: OnItemClickListener,
+): ListAdapter<Data, Adapter.ViewHolder>(DiffCallBack()) {
 
     inner class ViewHolder(private val binding: RowTodosBinding):
         RecyclerView.ViewHolder(binding.root){
@@ -33,8 +33,9 @@ class Adapter(
 
         fun bind(myData: Data){
             binding.apply {
-                tvDesc.text = myData.desc
                 tvTitle.text = myData.title
+                tvDesc.text = myData.desc
+
             }
         }
     }
