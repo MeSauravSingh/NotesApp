@@ -1,8 +1,8 @@
 # NotesApp
- MVVM
- LiveData
- Binding
- Room Database
+# MVVM
+# LiveData
+# Binding
+# Room Database
 
 
 
